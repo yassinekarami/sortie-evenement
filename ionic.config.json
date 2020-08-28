@@ -1,0 +1,7 @@
+{
+  "name": "sortie-evenement",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
