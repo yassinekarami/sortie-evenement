@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title *ngIf="evenementDetail">Détail : {{evenementDetail.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="evenementDetail">
+  
+  <img [src]='evenementDetail.image' />
+
+  <h4>{{evenementDetail.line1}}</h4>
+  <h4>{{evenementDetail.line2}}</h4>
+  <h4>{{evenementDetail.line3}}</h4>
+
+ 
+
+</ion-content>
+
