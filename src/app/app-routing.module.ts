@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'details/:eventid',
-    loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
+    loadChildren: () => import('./page/detail/detail.module').then( m => m.DetailPageModule)
   }
 ];
 @NgModule({

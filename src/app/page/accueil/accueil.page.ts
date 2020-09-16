@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { EvenementsService } from '../../core/service/evenements.service';
+import { EvenementsService} from '../../../core/service/evenements.service';
 import { EvenementModel } from 'src/core/models/evenement.model';
 import { IonInfiniteScroll } from '@ionic/angular';
 import { Router } from '@angular/router';

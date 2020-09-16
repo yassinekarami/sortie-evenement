@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { EvenementsService } from '../../core/service/evenements.service';
-import { EvenementDetailModel} from '../../core/models/evenementDetail.model';
+import { EvenementsService } from '../../../core/service/evenements.service';
+import { EvenementDetailModel} from '../../../core/models/evenementDetail.model';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.page.html',
@@ -21,7 +21,6 @@ export class DetailPage {
     await this.evenementsService.getEvenementDetail(this.eventid).subscribe(
       data => {
         this.evenementDetail = data;
-        console.log(this.evenementDetail);
       }
     );
 
